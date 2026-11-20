@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تواصل مع Lingua Services وشاركنا تفاصيل طلب الترجمة أو استفسارك.">
+  <title>تواصل معنا | Lingua Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Lingua Services - الرئيسية">
+        <span class="brand-mark" aria-hidden="true">ل</span>
+        <span class="brand-name">Lingua <b>Services</b><small>مكتب خدمات الترجمة</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="فتح قائمة التنقل">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="القائمة الرئيسية">
+        <a class="nav-link" href="index.html">الرئيسية</a>
+        <a class="nav-link" href="services.html">خدماتنا</a>
+        <a class="nav-link active" aria-current="page" href="contact.html">تواصل معنا</a>
+        <a class="button button-small" href="#contact-form">اطلب خدمة <span aria-hidden="true">←</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="container page-hero-content">
+        <span class="eyebrow">نحن هنا لمساعدتك</span>
+        <h1>يسعدنا تواصلك معنا</h1>
+        <p>شاركنا استفسارك أو تفاصيل طلبك، وسنسعد بالتعرف على احتياجك اللغوي.</p>
+        <div class="breadcrumb"><a href="index.html">الرئيسية</a><span aria-hidden="true">/</span><span>تواصل معنا</span></div>
+      </div>
+      <div class="page-hero-mark" aria-hidden="true">؟</div>
+    </section>
+
+    <section class="section contact-section">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow">لنتحدث</span>
+          <h2>كيف يمكننا<br>مساعدتك؟</h2>
+          <p>اكتب لنا عن الخدمة التي تحتاج إليها، وسنكون سعداء بمتابعة طلبك.</p>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">WA</span>
+            <div><a class="button" href="https://wa.me/966533705994" target="_blank" rel="noopener noreferrer">تواصل معنا عبر واتساب</a></div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">◷</span>
+            <div><small>ساعات العمل</small><span>الأحد إلى الخميس، 9 صباحًا إلى 5 مساءً</span></div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon" aria-hidden="true">⌖</span>
+            <div><small>الموقع</small><span>المملكة العربية السعودية</span></div>
+          </div>
+          <div class="contact-decoration" aria-hidden="true"><span>ع</span><span>A</span><span>文</span></div>
+        </div>
+
+        <div class="form-card">
+          <h2>أرسل تفاصيل طلبك</h2>
+          <p class="form-intro">الحقول التي تحمل علامة <span aria-hidden="true">*</span> مطلوبة.</p>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="full-name">الاسم الكامل <span aria-hidden="true">*</span></label>
+                <input id="full-name" name="name" type="text" autocomplete="name" placeholder="اكتب اسمك الكامل" required>
+              </div>
+              <div class="form-field">
+                <label for="email">البريد الإلكتروني <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" dir="ltr" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="service">نوع الخدمة <span aria-hidden="true">*</span></label>
+                <select id="service" name="service" required>
+                  <option value="" selected disabled>اختر الخدمة</option>
+                  <option value="documents">ترجمة المستندات</option>
+                  <option value="academic">الترجمة الأكاديمية</option>
+                  <option value="business">الترجمة التجارية</option>
+                  <option value="proofreading">التدقيق اللغوي</option>
+                  <option value="general">الترجمة العامة</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="language">اللغة المطلوبة <span aria-hidden="true">*</span></label>
+                <select id="language" name="language" required>
+                  <option value="" selected disabled>اختر اللغة</option>
+                  <option value="arabic">العربية</option>
+                  <option value="english">الإنجليزية</option>
+                  <option value="chinese">الصينية</option>
+                  <option value="french">الفرنسية</option>
+                  <option value="spanish">الإسبانية</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="details">تفاصيل الطلب <span aria-hidden="true">*</span></label>
+              <textarea id="details" name="details" rows="5" placeholder="أخبرنا بالمزيد عن النص أو طلبك..." required></textarea>
+            </div>
+            <button class="button submit-button" type="submit">إرسال الطلب <span aria-hidden="true">←</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <p class="form-note">هذا النموذج تجريبي ولا يرسل البيانات إلى خادم.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">ل</span>
+        <span class="brand-name">Lingua <b>Services</b><small>مكتب خدمات الترجمة</small></span>
+      </a>
+      <p>نقرّب المعاني، ونفتح أبواب التواصل.</p>
+      <div class="footer-links"><a href="index.html">الرئيسية</a><a href="services.html">خدماتنا</a><a href="contact.html">تواصل معنا</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-current-year>2026</span> Lingua Services. جميع الحقوق محفوظة.</span><span>ترجمتك تبدأ من هنا.</span></div>
+  </footer>
+</body>
+</html>
